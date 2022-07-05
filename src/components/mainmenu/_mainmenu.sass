@@ -1,0 +1,24 @@
+.mainmenu 
+  display: flex
+  justify-content: center
+
+  &__list
+    display: flex
+    align-items: center
+
+  &__item
+    margin: 0 15px
+
+    &-link
+      font-size: 1.143rem
+      color: $black
+
+      &:hover 
+        color: $blueDark
+
+    &--sale
+      .mainmenu__item-link
+        color: $orangeDark
+
+        &:hover 
+          color: $orange

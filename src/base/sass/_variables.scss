@@ -1,0 +1,90 @@
+// Font
+$font-family-base: "Roboto", sans-serif;
+$enable-smooth-scroll: false;
+
+/**
+ * Grid system
+ * -----------------------------------------
+ */
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$xxl: 1320px;
+
+// Containers
+$mw-sm: 540px;
+$mw-md: 720px;
+$mw-lg: 960px;
+$mw-xl: 1140px;
+$mw-xxl: 1320px;
+
+/*
+ * Color system
+ * ---------------------------------------------
+ */
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    		#6DB5DD;
+$blueLight:	  #DCF2FF;
+$blueDark:    #006EAD;
+$orange:      #FFB300;
+$orangeDark:  #E3810F;
+
+// scss-docs-start colors-map
+$colors: (
+	"blue":       $blue,
+	"blueLight":  $blueLight,
+	"blueDark":   $blueDark,
+	"orange":     $orange,
+	"orangeDark": $orangeDark,
+	"white":      $white,
+	"gray":       $gray-600,
+	"gray-dark":  $gray-800
+);
+// scss-docs-end colors-map
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+	"primary":    $primary,
+	"secondary":  $secondary,
+	"light":      $light,
+	"dark":       $dark
+);
+
+/**
+ * Buttons
+ * --------------------------------------
+ */
+
+$border-radius: 6px;
+
+$btn-font-size: 0.875rem;
+$btn-font-size-sm: 0.875rem;
+$btn-font-size-lg: 1.125rem;
+
+
+$transitionAll: all .3s ease 

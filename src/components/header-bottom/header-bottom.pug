@@ -1,0 +1,18 @@
+.header-bottom
+  .container
+    .header-bottom__wrapp 
+      .header-catalog
+        a.header-catalog__link(href="")
+          +icon("catalog")
+          span Каталог
+      .header-search
+        form.search-field(action="")
+          input.search-field__input(type="search" placeholder="Что ищете?" name="search") 
+          button.search-field__btn(type="submit")
+            +icon("search")
+      .header-basket
+        a.basket__link(href="")
+          .basket__link-icon
+            +icon("basket")
+            span.basket__link-bage 10
+          span.basket__link-name Корзина

@@ -1,0 +1,12 @@
+mixin menuitem(item)
+    - var isSale = item.sale ? " mainmenu__item--sale" : "";
+        li.mainmenu__item(class= isSale)
+            if (item.link === '/')
+                a.mainmenu__item-link(href= "/")= item.text
+            else
+                a.mainmenu__item-link(href= "/" + item.link + ".html")= item.text
+
+nav.mainmenu
+    ul.mainmenu__list
+        each item in mainmenuData
+            +menuitem(item)

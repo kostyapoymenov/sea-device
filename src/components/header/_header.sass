@@ -1,0 +1,75 @@
+.header 
+  
+  &-top
+    border-bottom: 1px solid $blueDark
+    
+    &-wrapp
+      display: flex
+
+    &__left
+      padding: 10px 0
+      font-size: 0
+
+    .logo__link 
+
+      img
+        // max-height: 90px
+        max-width: 180px
+        display: inline-block
+
+    &__right 
+      display: flex
+      justify-content: end
+      flex: 1
+
+    &__info
+      display: flex
+      align-items: center
+      padding: 0 35px
+
+    &__adress 
+      margin-right: 35px
+      font-size: 1rem
+      color: $blueDark
+
+    &__email 
+      font-size: 1rem
+      color: $blueDark
+
+      &:hover
+        color: $blue
+
+
+    &__call
+      background-color: $blueDark
+      padding: 20px 15px
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      flex-direction: column
+      align-items: right
+
+      &_btn
+        background: none
+        border: none
+        text-decoration: none
+        font-size: 0.875rem
+        color: #B0CBE5
+        padding: 0
+
+        &:hover
+          color: $white
+          
+
+    &__phone
+      color: $white
+      font-size: 1.43rem
+      display: flex
+      align-items: center
+
+      .icon-phone
+        width: 40px
+        height: 40px
+
+      span
+        margin-left: 13px

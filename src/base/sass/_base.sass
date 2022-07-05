@@ -1,0 +1,107 @@
+*
+  box-sizing: border-box
+  
+body
+  position: relative
+  font-family: Roboto
+  font-size: 16px
+
+.container 
+  max-width: $mw-xxl
+  margin: 0 auto
+  padding: 0 30px
+
+a
+  text-decoration: none
+  cursor: pointer
+  transition: $transitionAll
+
+button
+  transition: $transitionAll
+
+.btn
+  display: inline-block
+  font-size: 1.25rem
+  color: $white
+  font-weight: 400
+  padding: 10px 40px
+  background-color: $orangeDark
+  border-radius: $border-radius
+  transition: $transitionAll
+
+  &:hover 
+    background-color: $orange
+    transition: $transitionAll
+
+
+.section
+  margin-top: 60px
+
+.section-title
+  color: $black
+  font-size: 1.563rem
+  font-weight: 500
+  text-transform: uppercase
+
+  &--white
+    color: $white
+
+.section-double
+  background-image: url(../images/bg/main-bg.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  padding-bottom: 60px
+
+  &--main
+    margin-top: 20px 
+    background-position: 0 40px
+  
+// GRID
+
+.grid 
+  display: grid
+  grid-gap: 32px
+
+.grid .col 
+  display: grid
+  place-items: center
+
+.grid.grid--1 
+  grid-template-columns: repeat(4, 1fr)
+
+.grid .col__more
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: $blue
+  border-radius: $border-radius
+  transition: $transitionAll
+
+  &:hover 
+    .col__more-btn
+      background-color: $white
+      transition: $transitionAll
+
+      .icon-arrow-right 
+        color: $blueDark
+        transition: $transitionAll
+
+
+  &-title
+    font-size: 1.125rem
+    line-height: 1.375rem
+    font-weight: 500
+    color: $white
+    text-align: center
+
+  &-btn
+    color: $white
+    padding: 15px 27px
+    background-color: $blueDark
+    border-radius: $border-radius
+    margin-top: 25px
+    transition: $transitionAll
+
+    .icon-arrow-right
+      width: 40px

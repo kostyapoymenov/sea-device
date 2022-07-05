@@ -1,0 +1,104 @@
+.header-bottom
+  padding: 20px 0
+
+  &__wrapp 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header-catalog
+  &__link
+    display: flex
+    align-items: center
+
+    &:hover
+      color: $blue
+    
+    .icon-catalog
+      width: 30px
+    
+    span 
+      padding-left: 10px
+      font-size: 1.3rem
+  
+.header-search
+  flex: 1
+  max-width: 860px
+
+.search-field
+  position: relative
+  height: 40px
+  overflow: hidden
+  border-radius: $border-radius
+
+  &__input
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+    padding: 10px 75px 10px 20px
+    margin: 0
+    border: 0
+    display: block
+    background-color: $blueLight
+    border-radius: $border-radius
+    color: $blueDark
+
+    &::placeholder
+      color: $blue
+
+  &__btn
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 55px
+    padding: 0
+    margin: 0
+    border: 0
+    background-color: $blueDark
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover 
+      background-color: $blue
+  
+  .icon-search
+    color: $white
+    width: 25px
+    height: 25px
+      
+
+.header-basket
+  .basket__link
+    display: flex
+    align-items: center
+
+    &-icon
+      position: relative
+
+    &:hover
+      color: $blue
+    
+    .icon-basket
+      width: 25px
+      height: 25px
+    
+    &-name 
+      padding-left: 10px
+      font-size: 1.3rem
+    
+    &-bage
+      position: absolute
+      bottom: -3px
+      right: -5px
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 17px
+      min-width: 17px
+      background-color: $orangeDark
+      border-radius: 10px
+      font-size: 0.715rem
+      line-height: 0.715rem
+      color: $white

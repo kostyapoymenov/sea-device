@@ -1,0 +1,12 @@
+mixin servicesItem(item)
+  a.col.services__item(href="")
+    .services__item-icon
+      img(src="data:image/svg+xml;base64," + item.img, alt=item.name)
+    .services__item-title= item.name
+
+section.section.services
+  .container
+    h2.section-title УСЛУГИ
+    .grid.grid--1
+      each item in servicesData
+          +servicesItem(item)

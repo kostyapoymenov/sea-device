@@ -1,0 +1,16 @@
+
+mixin productCard(item)
+  .card
+    .card__top
+      img.card__img(src= item.img, alt= item.name)
+    .card__bottom
+      .card__title= item.name
+      .card__price
+        .card__price-cost
+          .card__price-old= item.oldPrice
+          .card__price-new= item.newPrice
+        if (item.sale)
+          .card__price-sale
+            .card__sale= item.sale
+      .card__btn
+        a.btn(href="") В корзину

@@ -1,0 +1,42 @@
+.main-slider
+  display: flex
+  position: relative
+  overflow: hidden
+
+  &__slide 
+    display: flex
+    position: relative
+    padding: 80px 100px
+    width: 100%
+    border-radius: $border-radius
+    overflow: hidden
+    background-color: $blue
+    background-image: url(../images/main-slider/main-slider-bg.jpg)
+    background-size: 100% auto
+    background-repeat: no-repeat
+
+    // &:after
+    //   content: ''
+    //   position: absolute
+    //   top: 0
+    //   right: 0
+    //   bottom: 0
+    //   left: 0 
+    //   background-color: #043375
+    //   opacity: .47
+  &__slide-content 
+    max-width: 670px
+
+  &__title
+    font-size: 2.813rem
+    color: $white
+
+  &__description
+    font-size: 1.25rem
+    font-weight: 100
+    line-height: 1.6rem
+    color: $white
+    margin-top: 15px
+
+  &__btn 
+    margin-top: 30px

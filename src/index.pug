@@ -1,0 +1,21 @@
+extends base/pug/base
+
+append variables
+  - var title = 'Главная страница'
+  - var pageClass = 'homepage'
+  - var menuHref = '/'
+
+block center-position
+  main
+    section.section-double.section-double--main
+      .container
+        include ./components/main-slider/main-slider
+        include ./components/equipment/equipment
+    include ./components/services/services
+    section.section.section-double
+      .container
+        include ./components/sales/sales
+
+  // Подключение svg иконок
+  //- +icon("arrow-up")
+  //- img.img-fluid(src="./images/no-foto.webp" alt="")

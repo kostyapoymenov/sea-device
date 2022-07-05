@@ -1,0 +1,72 @@
+.card
+  width: 100%
+  border-radius: $border-radius
+  background-color: $white
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 30px 15px 25px
+
+  &__top
+    border-bottom: 2px solid $blue
+    max-height: 185px
+    padding-bottom: 35px
+
+  &__img
+    display: block
+    margin: 0 auto
+    max-width: 100%
+
+  &__bottom
+    margin-top: 20px
+
+  &__title
+    font-size: 1.125rem
+    font-weight: 700
+    color: $black
+    min-height: 42px
+
+  &__price
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+    &-old
+      position: relative
+      font-size: 0.875rem
+      font-weight: 400
+      color: #D0D9DE
+      display: inline-block
+
+      &::after
+        content:''
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        height: 1px 
+        background-color: #D0D9DE
+
+    &-new
+      font-size: 1.5rem
+      font-weight: 700
+      color: $black
+      display: block
+  
+  &__sale
+    background-color: #6EC2F4
+    padding: 5px 7px
+    color: $white
+    font-weight: 1.25rem
+    font-weight: 700
+    border-radius: $border-radius
+
+  &__btn
+    margin-top: 20px
+
+    .btn 
+      width: 100%
+      text-align: center
+
+    
