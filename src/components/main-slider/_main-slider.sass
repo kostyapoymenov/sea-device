@@ -2,6 +2,7 @@
   display: flex
   position: relative
   overflow: hidden
+  padding-bottom: 40px
 
   &__slide 
     display: flex
@@ -14,7 +15,6 @@
     background-image: url(../images/main-slider/main-slider-bg.jpg)
     background-size: 100% auto
     background-repeat: no-repeat
-
     // &:after
     //   content: ''
     //   position: absolute
@@ -40,3 +40,21 @@
 
   &__btn 
     margin-top: 30px
+
+  .swiper-wrapper
+    height: auto
+
+  .swiper-button-prev
+    color: #fff
+
+  .swiper-button-next
+    color: #fff
+  
+.mian-swiper-pagination 
+  .swiper-pagination-bullet 
+    height: 10px
+    width: 10px
+    background-color: $blueLight
+    opacity: 1
+    &.swiper-pagination-bullet-active
+      background-color: $orange

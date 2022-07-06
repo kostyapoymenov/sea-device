@@ -104,7 +104,7 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('#mainSwiper', {
   }
 });
 var swiperSales = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('#salesSlider', {
-  loop: true,
+  // loop: true,
   modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation],
   slidesPerView: 4,
   spaceBetween: 30,
@@ -112,6 +112,25 @@ var swiperSales = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('#salesSlid
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  }
+});
+var swiperStocks = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('#stocksSlider', {
+  modules: [swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_1__.EffectCoverflow],
+  grabCursor: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".stocks-btn-next",
+    prevEl: ".stocks-btn-prev"
+  },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
   }
 });
 

@@ -2,7 +2,7 @@ import './go-top/go-top'
 
 // Swiper carousel
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, EffectCoverflow } from 'swiper';
 
 const swiper = new Swiper('#mainSwiper', {
   loop: true,
@@ -18,7 +18,7 @@ const swiper = new Swiper('#mainSwiper', {
 });
 
 const swiperSales = new Swiper('#salesSlider', {
-  loop: true,
+  // loop: true,
   modules: [Navigation],
   slidesPerView: 4,
   spaceBetween: 30,
@@ -26,5 +26,25 @@ const swiperSales = new Swiper('#salesSlider', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+const swiperStocks = new Swiper('#stocksSlider', {
+  modules: [Navigation, Pagination, EffectCoverflow],
+  grabCursor: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".stocks-btn-next",
+    prevEl: ".stocks-btn-prev",
+  },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });

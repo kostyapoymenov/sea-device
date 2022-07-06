@@ -1,0 +1,24 @@
+h2.section-title НАШИ ПРЕИМУЩЕСТВА
+.advantages
+  .grid.grid--2
+
+    each val, key in advantagesData
+
+      .col
+        .advantages__item 
+          .advantages__img 
+
+            if key === "one"
+              img(src="./images/advantages/advantage-1.png", alt="")
+            if key === "two"
+              img(src="./images/advantages/advantage-2.png", alt="")
+            if key === "three"
+              img(src="./images/advantages/advantage-3.png", alt="")
+
+          ul.advantages__list
+
+              each item in val
+
+                li.advantages__list-item 
+                  .advantages__icon(style=`background-image: url(data:image/png;base64,${item.icon})`)
+                  p.advantages__text= item.name

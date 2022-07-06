@@ -1,0 +1,23 @@
+<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 8H2C1.44772 8 1 8.44772 1 9V27C1 27.5523 1.44772 28 2 28H36C36.5523 28 37 27.5523 37 27V9C37 8.44772 36.5523 8 36 8H33" stroke="#9EC9E3" stroke-width="1.5"/>
+<path d="M30 11H33C33.5523 11 34 11.4477 34 12V25C34 25.5523 33.5523 26 33 26H5C4.44772 26 4 25.5523 4 25V12C4 11.4477 4.44772 11 5 11H26.5" stroke="#9EC9E3" stroke-width="1.5"/>
+<mask id="path-3-inside-1_131_1268" fill="white">
+<rect x="7" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 7 17.7676)"/>
+</mask>
+<rect x="7" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 7 17.7676)" stroke="#9EC9E3" stroke-width="3" mask="url(#path-3-inside-1_131_1268)"/>
+<mask id="path-4-inside-2_131_1268" fill="white">
+<rect x="13" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 13 17.7676)"/>
+</mask>
+<rect x="13" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 13 17.7676)" stroke="#9EC9E3" stroke-width="3" mask="url(#path-4-inside-2_131_1268)"/>
+<mask id="path-5-inside-3_131_1268" fill="white">
+<rect x="19" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 19 17.7676)"/>
+</mask>
+<rect x="19" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 19 17.7676)" stroke="#9EC9E3" stroke-width="3" mask="url(#path-5-inside-3_131_1268)"/>
+<mask id="path-6-inside-4_131_1268" fill="white">
+<rect x="25" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 25 17.7676)"/>
+</mask>
+<rect x="25" y="17.7676" width="3.91395" height="3.91395" rx="0.5" transform="rotate(-45 25 17.7676)" stroke="#9EC9E3" stroke-width="3" mask="url(#path-6-inside-4_131_1268)"/>
+<path d="M7 27.5L9.87428 34.6857C9.95021 34.8755 10.1341 35 10.3385 35H28.6396C28.8548 35 29.0459 34.8623 29.114 34.6581L31.5 27.5" stroke="#9EC9E3" stroke-width="1.5"/>
+<path d="M22.243 7.38696C25.8722 5.65908 27.401 3.13627 27.8584 1.63488C27.8918 1.52539 28.1132 1.52712 28.1428 1.63768C29.0168 4.90368 31.7288 6.56862 33.531 7.22133C33.6446 7.26246 33.6285 7.65423 33.5155 7.69678C31.4164 8.48697 29.0921 11.4722 28.1295 13.2515C28.0847 13.3343 27.9573 13.3169 27.933 13.226C27.0647 9.97175 23.9521 8.16979 22.2521 7.5816C22.1648 7.5514 22.1596 7.42666 22.243 7.38696Z" stroke="#9EC9E3" stroke-width="1.5"/>
+<ellipse cx="32.7915" cy="36" rx="5.79151" ry="6" fill="#6EC2F4"/>
+</svg>

@@ -1,0 +1,40 @@
+.stocks
+  // overflow: hidden
+  padding: 60px 30px 0
+  position: relative
+
+  &-slider
+    overflow: hidden
+    display: flex
+    position: relative
+    padding-bottom: 40px
+  
+  &-slide
+    display: flex
+    width: 100%
+
+    img
+      width: 100%
+
+  .swiper-wrapper
+    height: auto
+
+  .stocks-btn-prev
+    left: 0
+    color: $white
+    top: 63.5%
+
+  .stocks-btn-next
+    right: 0
+    color: $white
+    top: 63.5%
+
+.stocks-swiper-pagination 
+  .swiper-pagination-bullet 
+    height: 10px
+    width: 10px
+    background-color: $blueLight
+    opacity: 1
+    &.swiper-pagination-bullet-active
+      background-color: $orange
+    

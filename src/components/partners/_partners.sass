@@ -1,0 +1,102 @@
+.partners
+  display: flex
+
+  &__block 
+    margin-bottom: 40px
+    padding-left: 20px
+    &:last-child
+      margin-bottom: 0
+
+    &--orange
+      .partners__title
+        color: $orange
+        &:after 
+          background-color: $orange
+
+      .partners__item.active
+        color: $orange
+
+      .partners__item:hover 
+        color: $orange
+
+    &--blue
+      .partners__title
+        color: $blueDark
+        &:after 
+          background-color: $blueDark
+
+      .partners__item.active
+        color: $blueDark
+
+      .partners__item:hover 
+        color: $blueDark
+
+
+  &__title
+    margin-bottom: 15px
+    font-size: 1.125rem
+    font-weight: 400
+    position: relative
+
+    &:after 
+      content: ''
+      position: absolute
+      top: 50%
+      left: -20px
+      transform: translateY(-50%)
+      height: 15px
+      width: 15px
+      border-radius: 10px
+
+  &__item
+    white-space: nowrap
+    font-size: 1.125rem
+    line-height: 1.4
+    font-weight: 300
+    color: $gray-500
+    transition: $transitionAll
+
+    &:hover 
+      cursor: pointer
+      transition: $transitionAll
+
+  &__right
+    position: relative
+
+    img
+      width: 100%
+  
+.partners__dot
+  position: absolute
+  top: 0
+  left: 0
+  height: 19px 
+  width: 19px
+  border-radius: 10px 
+  background-color: $blueDark 
+  
+  &--orange
+    background-color: $orange
+
+  &-text
+    display: none
+
+  &--1
+    top: 37%
+    left: 19%
+
+  &--2
+    top: 62%
+    left: 18%
+
+  &--3
+    top: 46%
+    left: 28%
+
+  &--4
+    top: 55%
+    left: 54%
+
+  &--5
+    top: 41%
+    left: 10%
