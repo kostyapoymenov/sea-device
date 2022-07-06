@@ -1508,6 +1508,7 @@ button.swiper-pagination-bullet {
 .header-catalog__link {
   display: flex;
   align-items: center;
+  color: #006EAD;
 }
 .header-catalog__link:hover {
   color: #6DB5DD;
@@ -1572,6 +1573,7 @@ button.swiper-pagination-bullet {
 .header-basket .basket__link {
   display: flex;
   align-items: center;
+  color: #006EAD;
 }
 .header-basket .basket__link-icon {
   position: relative;
