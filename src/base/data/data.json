@@ -2,7 +2,7 @@
   "mainmenuData": [
     {
       "text": "Акции",
-      "link": "stocks"
+      "link": "/sea-device/dist/stocks"
     },
     {
       "text": "Скидки",
@@ -11,11 +11,11 @@
     },
     {
       "text": "Оборудование",
-      "link": "catalog"
+      "link": "/sea-device/dist/catalog"
     },
     {
       "text": "Услуги",
-      "link": "uslugi"
+      "link": "/sea-device/dist/uslugi"
     },
     {
       "text": "О компании",
@@ -23,7 +23,7 @@
     },
     {
       "text": "Новости",
-      "link": "news"
+      "link": "/sea-device/dist/news"
     },
     {
       "text": "Контакты",
