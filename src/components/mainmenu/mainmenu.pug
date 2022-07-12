@@ -3,6 +3,8 @@ mixin menuitem(item)
         li.mainmenu__item(class= isSale)
             if (item.link === '/')
                 a.mainmenu__item-link(href= "/")= item.text
+            else if (item.link === '#sales')
+                a.mainmenu__item-link(href= item.link)= item.text
             else
                 a.mainmenu__item-link(href= "/" + item.link + ".html")= item.text
 

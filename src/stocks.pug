@@ -1,0 +1,21 @@
+extends base/pug/base
+
+append variables
+  - var title = 'Акции'
+  - var pageClass = 'stocks-page'
+  - var menuHref = '/stocks'
+      
+include ./components/info-card/info-card
+
+block center-position
+  main
+    section.section.section--bg-blue
+      .container
+        h2.section-title.section-title--white Акции
+        .stocks-block
+          .grid.grid--2
+            each item in stocksData
+              +infoCardItem(item)
+
+
+  // Подключение svg иконок

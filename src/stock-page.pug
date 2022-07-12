@@ -1,0 +1,32 @@
+extends base/pug/base
+
+append variables
+  - var title = 'Акции'
+  - var pageClass = 'stocks-page'
+  - var menuHref = '/stocks'
+      
+include ./components/info-card/info-card
+
+block center-position
+  main
+    section.section
+      .container
+        h2.section-title Поставка, продажа, проектирование, монтаж, ПНР
+        .breadcrambs.breadcrambs--grey
+          ul.breadcrambs__list
+            li.breadcrambs__item  
+              a.breadcrambs__link(href="/") Главная
+            li.breadcrambs__item  
+              a.breadcrambs__link(href="/stocks.html") Акции
+            li.breadcrambs__item  
+              a.breadcrambs__link(href="/stock-page.html") Поставка, продажа, проектирование, монтаж, ПНР
+        .text-block
+          .text-block__img
+            img(src="./images/stocks/stock-1.png", alt="")
+          p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+          ul.text-block__list
+            li Поставка, продажа, проектирование
+            li Поставка, продажа, проектирование
+            li Поставка, продажа, проектирование
+          p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+          

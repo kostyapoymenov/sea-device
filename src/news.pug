@@ -1,0 +1,24 @@
+extends base/pug/base
+
+append variables
+  - var title = 'Акции'
+  - var pageClass = 'news'
+  - var menuHref = '/news'
+      
+include ./components/info-card/info-card
+
+block center-position
+  main
+    section.section.section--bg-blue
+      .container
+        h2.section-title.section-title--white Акции
+        .breadcrambs
+          ul.breadcrambs__list
+            li.breadcrambs__item  
+              a.breadcrambs__link(href="/") Главная
+            li.breadcrambs__item  
+              a.breadcrambs__link(href="/stocks.html") Акции
+        .stocks-block
+          .grid.grid--2
+            each item in newsData
+              +infoCardItem(item)
