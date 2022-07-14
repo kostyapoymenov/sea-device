@@ -78,8 +78,27 @@
   &--orange
     background-color: $orange
 
+    .partners__dot-text
+      border: 1px solid $orange
+
   &-text
     display: none
+    position: absolute
+    bottom: 90%
+    left: 60%
+    background-color: $white
+    border: 1px solid $blue
+    border-radius: $border-radius
+    padding: 10px 15px
+    white-space: nowrap
+    font-size: 1rem
+    font-weight: 200
+    line-height: 1
+    color: $blueDark
+  
+  &.active
+    .partners__dot-text
+      display: block
 
   &--1
     top: 37%

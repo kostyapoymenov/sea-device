@@ -22,12 +22,12 @@
   .stocks-btn-prev
     left: 0
     color: $white
-    top: 63.5%
+    top: 60%
 
   .stocks-btn-next
     right: 0
     color: $white
-    top: 63.5%
+    top: 60%
 
 .stocks-swiper-pagination 
   .swiper-pagination-bullet 
@@ -38,3 +38,19 @@
     &.swiper-pagination-bullet-active
       background-color: $orange
     
+.swiper
+  &-button-prev
+    transition: $transitionAll
+    color: #fff
+
+    &:hover
+      transition: $transitionAll
+      color: $orange
+
+  &-button-next
+    transition: $transitionAll
+    color: #fff
+
+    &:hover
+      transition: $transitionAll
+      color: $orange

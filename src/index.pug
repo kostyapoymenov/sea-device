@@ -1,4 +1,4 @@
-extends base/pug/base
+extends base/pug/base-header-transparent
 
 append variables
   - var title = 'Главная страница'
@@ -7,12 +7,13 @@ append variables
 
 block center-position
   main
-    section.section-double.section-double--main
+    section.section-bg.section-double--main
+      include components/header-main/header-main
       .container
         include ./components/main-slider/main-slider
         include ./components/equipment/equipment
     include ./components/services/services
-    section.section.section-double
+    section.section.section-bg
       .container
         include ./components/sales-slider/sales-slider
         include ./components/stocks-slider/stocks-slider
@@ -22,4 +23,3 @@ block center-position
     section.section
       .container
         include ./components/partners/partners
-  // Подключение svg иконок

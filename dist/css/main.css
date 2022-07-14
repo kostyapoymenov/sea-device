@@ -520,21 +520,18 @@ button {
   color: #fff;
 }
 
-.section-double {
+.section-bg {
   background-image: url(../images/bg/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-.section-double--main {
-  margin-top: 20px;
-  background-position: 0 40px;
+  background-position: center;
 }
 
 .section--bg-blue {
   background-image: url(../images/bg/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 20px;
+  background-position: center;
 }
 
 .grid {
@@ -1517,6 +1514,9 @@ button.swiper-pagination-bullet {
   flex: 1;
 }
 
+.header {
+  padding-bottom: 20px;
+}
 .header-top {
   border-bottom: 1px solid #006EAD;
 }
@@ -1544,14 +1544,14 @@ button.swiper-pagination-bullet {
 .header-top__adress {
   margin-right: 35px;
   font-size: 1rem;
-  color: #006EAD;
+  color: #fff;
 }
 .header-top__email {
   font-size: 1rem;
-  color: #006EAD;
+  color: #fff;
 }
 .header-top__email:hover {
-  color: #6DB5DD;
+  color: #FFB300;
 }
 .header-top__call {
   background-color: #006EAD;
@@ -1586,6 +1586,9 @@ button.swiper-pagination-bullet {
 .header-top__phone span {
   margin-left: 13px;
 }
+.header--blue {
+  background-color: #002963;
+}
 
 .header-bottom {
   padding: 20px 0;
@@ -1599,10 +1602,10 @@ button.swiper-pagination-bullet {
 .header-catalog__link {
   display: flex;
   align-items: center;
-  color: #006EAD;
+  color: #fff;
 }
 .header-catalog__link:hover {
-  color: #6DB5DD;
+  color: #FFB300;
 }
 .header-catalog__link .icon-catalog {
   width: 30px;
@@ -1664,13 +1667,13 @@ button.swiper-pagination-bullet {
 .header-basket .basket__link {
   display: flex;
   align-items: center;
-  color: #006EAD;
+  color: #fff;
 }
 .header-basket .basket__link-icon {
   position: relative;
 }
 .header-basket .basket__link:hover {
-  color: #6DB5DD;
+  color: #FFB300;
 }
 .header-basket .basket__link .icon-basket {
   width: 25px;
@@ -1714,16 +1717,16 @@ button.swiper-pagination-bullet {
 }
 .mainmenu__item-link {
   font-size: 1.143rem;
-  color: #000;
+  color: #fff;
 }
 .mainmenu__item-link:hover {
-  color: #006EAD;
+  color: #FFB300;
 }
 .mainmenu__item--sale .mainmenu__item-link {
-  color: #E3810F;
+  color: #FFB300;
 }
 .mainmenu__item--sale .mainmenu__item-link:hover {
-  color: #FFB300;
+  color: #E3810F;
 }
 
 .textblock ol,
@@ -1798,10 +1801,22 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 .main-slider .swiper-button-prev {
+  transition: all 0.3s ease;
   color: #fff;
+  top: 45%;
+}
+.main-slider .swiper-button-prev:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
 }
 .main-slider .swiper-button-next {
+  transition: all 0.3s ease;
   color: #fff;
+  top: 45%;
+}
+.main-slider .swiper-button-next:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
 }
 
 .mian-swiper-pagination .swiper-pagination-bullet {
@@ -1903,10 +1918,20 @@ button.swiper-pagination-bullet {
 .sales .swiper-button-prev {
   left: -32px;
   color: #fff;
+  transition: all 0.3s ease;
+}
+.sales .swiper-button-prev:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
 }
 .sales .swiper-button-next {
   right: -32px;
   color: #fff;
+  transition: all 0.3s ease;
+}
+.sales .swiper-button-next:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
 }
 
 .stocks {
@@ -1932,12 +1957,12 @@ button.swiper-pagination-bullet {
 .stocks .stocks-btn-prev {
   left: 0;
   color: #fff;
-  top: 63.5%;
+  top: 60%;
 }
 .stocks .stocks-btn-next {
   right: 0;
   color: #fff;
-  top: 63.5%;
+  top: 60%;
 }
 
 .stocks-swiper-pagination .swiper-pagination-bullet {
@@ -1948,6 +1973,23 @@ button.swiper-pagination-bullet {
 }
 .stocks-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FFB300;
+}
+
+.swiper-button-prev {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.swiper-button-prev:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
+}
+.swiper-button-next {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.swiper-button-next:hover {
+  transition: all 0.3s ease;
+  color: #FFB300;
 }
 
 .section-advantages {
@@ -2073,8 +2115,26 @@ button.swiper-pagination-bullet {
 .partners__dot--orange {
   background-color: #FFB300;
 }
+.partners__dot--orange .partners__dot-text {
+  border: 1px solid #FFB300;
+}
 .partners__dot-text {
   display: none;
+  position: absolute;
+  bottom: 90%;
+  left: 60%;
+  background-color: #fff;
+  border: 1px solid #6DB5DD;
+  border-radius: 6px;
+  padding: 10px 15px;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1;
+  color: #006EAD;
+}
+.partners__dot.active .partners__dot-text {
+  display: block;
 }
 .partners__dot--1 {
   top: 37%;

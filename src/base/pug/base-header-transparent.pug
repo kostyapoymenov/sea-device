@@ -1,0 +1,28 @@
+include ../../mixins/pug/svg-icon
+include ../../components/product-card/product-card
+block variables
+  -
+    var baseDir = './';
+
+doctype html
+html(lang="ru")
+  //- Include head
+  include ./head
+
+  body(class=pageClass)
+    .wrapper
+
+      .wrapper__content
+        block top-position
+
+        block center-position
+
+        block bottom-position
+
+      //- Include footer
+      include ../../components/footer/footer
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src=`${baseDir}js/main.js`)
+
+    block script

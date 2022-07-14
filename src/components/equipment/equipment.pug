@@ -7,12 +7,18 @@ mixin equipmentItem(item)
       .equipment__item-title= item.name
 
 section.section.equipment
-  h2(class=menuHref!=='/' ? 'section-title' : 'section-title section-title--white') ОБОРУДОВАНИЕ
+  h2.section-title.section-title--white(class=menuHref!=='/' ? 'section-title' : 'section-title section-title--white') ОБОРУДОВАНИЕ
+  .breadcrambs
+    ul.breadcrambs__list
+      li.breadcrambs__item  
+        a.breadcrambs__link(href="/") Главная
+      li.breadcrambs__item  
+        a.breadcrambs__link(href="/stocks.html") Каталог
   .grid.grid--1
     each item in equipmentData
       +equipmentItem(item)
     if (menuHref !== '/catalog')
-      a.col.col__more(href="")
+      a.col.col__more(href="./catalog.html")
         .col__more-title 
           | Посмотреть 
           br

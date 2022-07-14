@@ -1,4 +1,4 @@
-extends base/pug/base
+extends base/pug/base-header-blue
 
 append variables
   - var title = 'Акции'
@@ -17,7 +17,7 @@ block center-position
             li.breadcrambs__item  
               a.breadcrambs__link(href="/") Главная
             li.breadcrambs__item  
-              a.breadcrambs__link(href="sea-device/dist/stocks.html") Новости
+              a.breadcrambs__link(href="/stocks.html") Новости
         .text-block
         .text-block__img
           img(src="./images/stocks/stock-1.png", alt="")

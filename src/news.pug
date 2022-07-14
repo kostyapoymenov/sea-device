@@ -1,7 +1,7 @@
-extends base/pug/base
+extends base/pug/base-header-transparent
 
 append variables
-  - var title = 'Акции'
+  - var title = 'Новости'
   - var pageClass = 'news'
   - var menuHref = '/news'
       
@@ -9,16 +9,18 @@ include ./components/info-card/info-card
 
 block center-position
   main
-    section.section.section--bg-blue
-      .container
-        h2.section-title.section-title--white Акции
-        .breadcrambs
-          ul.breadcrambs__list
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="/") Главная
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="sea-device/dist/stocks.html") Акции
-        .stocks-block
-          .grid.grid--2
-            each item in newsData
-              +infoCardItem(item)
+    section.section--bg-blue
+      include components/header-main/header-main
+      section.section
+        .container
+          h2.section-title.section-title--white Новости
+          .breadcrambs
+            ul.breadcrambs__list
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Главная
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/stocks.html") Новости
+          .stocks-block
+            .grid.grid--2
+              each item in newsData
+                +infoCardItem(item)
