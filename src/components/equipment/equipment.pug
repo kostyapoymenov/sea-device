@@ -8,12 +8,13 @@ mixin equipmentItem(item)
 
 section.section.equipment
   h2.section-title.section-title--white(class=menuHref!=='/' ? 'section-title' : 'section-title section-title--white') ОБОРУДОВАНИЕ
-  .breadcrambs
-    ul.breadcrambs__list
-      li.breadcrambs__item  
-        a.breadcrambs__link(href="/") Главная
-      li.breadcrambs__item  
-        a.breadcrambs__link(href="/stocks.html") Каталог
+  if menuHref!=='/'
+    .breadcrambs
+      ul.breadcrambs__list
+        li.breadcrambs__item  
+          a.breadcrambs__link(href="/") Главная
+        li.breadcrambs__item  
+          span Каталог
   .grid.grid--1
     each item in equipmentData
       +equipmentItem(item)

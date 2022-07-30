@@ -2,14 +2,14 @@ extends base/pug/base-header-transparent
 
 append variables
   - var title = 'Акции'
-  - var pageClass = 'stocks-page'
+  - var pageClass = 'stocks-page body-bg-img'
   - var menuHref = '/stocks'
       
 include ./components/info-card/info-card
 
 block center-position
   main
-    section.section--bg-blue
+    section
       include components/header-main/header-main
       section.section
         .container
@@ -19,7 +19,7 @@ block center-position
               li.breadcrambs__item  
                 a.breadcrambs__link(href="/") Главная
               li.breadcrambs__item  
-                a.breadcrambs__link(href="./stocks.html") Акции
+                span Акции
           .stocks-block
             .grid.grid--2
               each item in stocksData

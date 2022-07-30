@@ -1,0 +1,131 @@
+.basket-card
+  position: relative
+  background-color: $white
+  border-radius: $border-radius
+  overflow: hidden
+  margin-bottom: 15px
+  display: flex
+
+  &:last-child
+    margin-bottom: 0
+
+  &__pictures 
+    padding: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-width: 112px
+
+  &__content 
+    padding: 20px
+    width: 100%
+
+  &__title
+    font-size: 1.375rem
+    color: $blueDark
+    font-weight: 600
+    padding-right: 40px
+
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 40px
+
+  &__price
+    display: flex
+    align-items: flex-end
+
+    &-old
+      position: relative
+      font-size: 1.25rem
+      font-weight: 400
+      color: #D0D9DE
+      display: inline-block
+
+      &::after
+        content:''
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        height: 1px 
+        background-color: #D0D9DE
+
+    &-new
+      font-size: 1.563rem
+      font-weight: 700
+      color: $black
+      display: block
+  
+  &__sale
+    background-color: #6EC2F4
+    padding: 5px 7px
+    color: $white
+    font-weight: 1.25rem
+    font-weight: 700
+    border-radius: $border-radius
+
+  &__counter-title
+    font-size: 1rem
+    color: #D0D9DE
+    margin-bottom: 5px
+
+  &__close
+    height: 20px
+    width: 20px
+    position: absolute
+    top: 15px
+    right: 15px
+    transition: $transitionAll
+    &:hover
+      cursor: pointer
+      transition: $transitionAll
+
+      svg
+        stroke: $blueDark
+
+.counter
+  position: relative
+  background-color: #F8FBFF
+  height: 35px
+  max-width: 120px
+
+  &__input
+    display: block
+    height: 100%
+    width: 100%
+    border: 1px solid #D9E9F3
+    outline: none
+    background-color: transparent
+    border-radius: 2px
+    padding: 0 35px
+    text-align: center
+    color: $blueDark
+    cursor: pointer
+
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    bottom: 0
+    padding: 10px 0
+    width: 35px
+    color: $blueDark
+    cursor: pointer
+    transition: $transitionAll
+
+    &:hover 
+      background-color: #D9E9F3
+      transition: $transitionAll
+
+    &-minus
+      left: 0
+      border-right: 1px solid #D9E9F3
+
+    &-plus
+      right:0
+      border-left: 1px solid #D9E9F3

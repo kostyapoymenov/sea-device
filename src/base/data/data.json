@@ -261,5 +261,42 @@
       "image": "./images/stocks/stock-1.png",
       "href": "/news-page.html"
     }
+  ],
+  "basketData": [
+    {
+      "img": "./images/products/product-1.png",
+      "title": "Товар 1",
+      "oldPrice": "50 000 р.",
+      "newPrice": "25 000 р.",
+      "sale": "50%"
+    },
+    {
+      "img": "./images/products/product-1.png",
+      "title": "Товар 2",
+      "oldPrice": "500 000 р.",
+      "newPrice": "250 000 р.",
+      "sale": "50%"
+    },
+    {
+      "img": "./images/products/product-1.png",
+      "title": "Товар 3",
+      "oldPrice": "500 000 р.",
+      "newPrice": "250 000 р.",
+      "sale": "50%"
+    },
+    {
+      "img": "./images/products/product-1.png",
+      "title": "Товар 4",
+      "oldPrice": "500 000 р.",
+      "newPrice": "250 000 р.",
+      "sale": "50%"
+    },
+    {
+      "img": "./images/products/product-1.png",
+      "title": "Товар 5",
+      "oldPrice": "500 000 р.",
+      "newPrice": "250 000 р.",
+      "sale": "50%"
+    }
   ]
 }

@@ -1,0 +1,15 @@
+extends base/pug/base-header-transparent
+
+append variables
+  - var title = 'Корзина'
+  - var pageClass = 'catalog body-bg-img'
+  - var menuHref = '/catalog'
+
+
+block center-position
+  main
+    section
+      include components/header-main/header-main
+    section
+      .container
+        include ./components/basket/basket

@@ -1,0 +1,49 @@
+section.section
+  h2.section-title.section-title--white(class=menuHref!=='/' ? 'section-title' : 'section-title section-title--white') КОРЗИНА
+  .breadcrambs
+    ul.breadcrambs__list
+      li.breadcrambs__item  
+        a.breadcrambs__link(href="/") Главная
+      li.breadcrambs__item 
+        span Корзина
+  section
+    .basket 
+      .basket-body
+        each item in basketData
+          +basketProductCard(item)
+      .basket-cheque
+        .basket-cheque__inner
+          .basket-cheque__top
+            .basket-cheque__title Ваш заказ:
+            .basket-cheque__count Количество товаров: 
+              span.basket-cheque__count-val 200
+            .basket-cheque__list
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 1 
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 2
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 3
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 4
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 5
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 5
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 5
+                .basket-cheque__item-count 100 шт
+              .basket-cheque__item
+                .basket-cheque__item-name Товар 5
+                .basket-cheque__item-count 100 шт
+          .basket-cheque__bottom
+            .basket-cheque__total
+              .basket-cheque__total-text Итого: 
+              .basket-cheque__total-sum 200 000 000 р.
+  

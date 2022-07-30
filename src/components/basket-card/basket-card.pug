@@ -1,0 +1,25 @@
+
+mixin basketProductCard(item)
+  .basket-card
+    .basket-card__pictures 
+      img(src= item.img, alt= item.title)
+    .basket-card__content 
+      a.basket-card__title(href="")= item.title
+      .basket-card__bottom 
+        .basket-card__price
+          .basket-card__price-cost
+            .basket-card__price-old= item.oldPrice
+            .basket-card__price-new= item.newPrice
+          if (item.sale)
+            .basket-card__price-sale
+            .basket-card__sale= item.sale
+        .basket-card__counter 
+          .basket-card__counter-title Количество
+          .counter
+            input.counter__input(type="text" name="count" value="100")
+            .counter__btn.counter__btn-minus —
+            .counter__btn.counter__btn-plus +
+    .basket-card__close
+      svg(width='20', height='20', viewbox='0 0 24 24', fill='none', stroke='#6DB5DD', xmlns='http://www.w3.org/2000/svg')
+        path(d='M2 2L22 22M2 22L22 2', stroke-width='3', stroke-linecap='round')
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Новости</title>
+    <title>Каталог</title>
     <link rel="shortcut icon" href="/images/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="./css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="news">
+  <body class="catalog">
     <div class="wrapper">
       <div class="wrapper__content">
         <main>
-          <section class="section--bg-blue">
+          <section class="section-bg">
             <header class="header">
               <div class="header-top">
                 <div class="container">
@@ -81,71 +81,50 @@
                 </ul>
               </nav>
             </header>
-            <section class="section">
-              <div class="container">
-                <h2 class="section-title section-title--white">Новости</h2>
+            <div class="container">
+              <section class="section equipment">
+                <h2 class="section-title section-title--white section-title">ОБОРУДОВАНИЕ</h2>
                 <div class="breadcrambs">
                   <ul class="breadcrambs__list">
                     <li class="breadcrambs__item"> <a class="breadcrambs__link" href="/">Главная</a></li>
-                    <li class="breadcrambs__item"> <span>Новости</span></li>
+                    <li class="breadcrambs__item"> <a class="breadcrambs__link" href="/stocks.html">Каталог</a></li>
                   </ul>
                 </div>
-                <div class="stocks-block">
-                  <div class="grid grid--2">
-                    <div class="col"><a class="info-card" href="/news-page.html">
-                        <div class="info-card__img" style="background-image: url(./images/stocks/stock-1.png)"></div>
-                        <div class="info-card__content">
-                          <div class="info-card__text">
-                            <div class="info-card__title">Новость 1</div>
-                            <div class="info-card__description">Описание новости 1</div>
-                          </div>
-                          <div class="info-card__btns">
-                            <div class="info-card__date">12.09.2022</div>
-                            <div class="info-card__btn">Подробнее</div>
-                          </div>
-                        </div></a></div>
-                    <div class="col"><a class="info-card" href="/news-page.html">
-                        <div class="info-card__img" style="background-image: url(./images/stocks/stock-1.png)"></div>
-                        <div class="info-card__content">
-                          <div class="info-card__text">
-                            <div class="info-card__title">Это длинное название новости 2</div>
-                            <div class="info-card__description">Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.</div>
-                          </div>
-                          <div class="info-card__btns">
-                            <div class="info-card__date">12.09.2022</div>
-                            <div class="info-card__btn">Подробнее</div>
-                          </div>
-                        </div></a></div>
-                    <div class="col"><a class="info-card" href="/news-page.html">
-                        <div class="info-card__img" style="background-image: url(./images/stocks/stock-1.png)"></div>
-                        <div class="info-card__content">
-                          <div class="info-card__text">
-                            <div class="info-card__title">Поставка, продажа, проектирование, монтаж, ПНР </div>
-                            <div class="info-card__description">Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.</div>
-                          </div>
-                          <div class="info-card__btns">
-                            <div class="info-card__date">12.09.2022</div>
-                            <div class="info-card__btn">Подробнее</div>
-                          </div>
-                        </div></a></div>
-                    <div class="col"><a class="info-card" href="/news-page.html">
-                        <div class="info-card__img" style="background-image: url(./images/stocks/stock-1.png)"></div>
-                        <div class="info-card__content">
-                          <div class="info-card__text">
-                            <div class="info-card__title">Поставка, продажа, проектирование, монтаж, ПНР </div>
-                            <div class="info-card__description">Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.</div>
-                          </div>
-                          <div class="info-card__btns">
-                            <div class="info-card__date">12.09.2022</div>
-                            <div class="info-card__btn">Подробнее</div>
-                          </div>
-                        </div></a></div>
-                  </div>
+                <div class="grid grid--1"><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment.png" alt="Навигационное оборудование"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">Навигационное оборудование</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment1.png" alt="Радиооборудование и средства связи"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">Радиооборудование и средства связи</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment.png" alt="Спутниковая связь"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">Спутниковая связь</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment1.png" alt="Системы автоматики и электрооборудования"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">Системы автоматики и электрооборудования</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment.png" alt="ЭРУ"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">ЭРУ</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment1.png" alt="ГМССБ оборудование"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">ГМССБ оборудование</div>
+                                  </div></a><a class="col equipment__item" href="">
+                                  <div class="equipment__item-top"><img class="equipment__item-img" src="./images/equipment/equipment.png" alt="Оборудование для маломерного флота"></div>
+                                  <div class="equipment__item-bottom">
+                                    <div class="equipment__item-title">Оборудование для маломерного флота</div>
+                                  </div></a>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </section>
         </main>
+        <!-- Подключение svg иконок-->
       </div>
       <footer class="footer">
         <div class="container">

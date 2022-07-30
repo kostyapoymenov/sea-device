@@ -1,0 +1,54 @@
+block variables
+  -
+    var baseDir = './';
+
+doctype html
+html(lang="ru")
+  //- Include head
+  include base/pug/head
+
+  body(class=pageClass)
+    .wrapper
+
+      .wrapper__content 
+        ul 
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/index.html") Главная  
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/catalog.html") Каталог
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/stocks.html") Акции
+            ul 
+              li 
+                a(href="https://kostyapoymenov.github.io/sea-device/dist/stock-page.html") Конкретная акция
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/news.html") Новости
+            ul
+              li 
+                a(href="https://kostyapoymenov.github.io/sea-device/dist/news-page.html") Конкретная новость
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/basket.html") Корзина
+          li 
+            a(href="https://kostyapoymenov.github.io/sea-device/dist/card-product.html") Карточка товара
+
+    style(type="text/css").
+      ul {
+        padding: 40px
+      }
+
+      li {
+        margin-bottom: 10px
+      }
+
+      ul ul {
+        padding: 0
+      }
+
+      ul ul li {
+        padding: 10px 10px 10px 20px ;
+        margin-bottom: 0px;
+      }
+
+    script(src=`${baseDir}js/main.js`)
+
+    block script
