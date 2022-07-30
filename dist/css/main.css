@@ -2261,6 +2261,7 @@ button.swiper-pagination-bullet {
   font-weight: 1.25rem;
   font-weight: 700;
   border-radius: 6px;
+  margin-left: 10px;
 }
 .basket-card__counter-title {
   font-size: 1rem;
