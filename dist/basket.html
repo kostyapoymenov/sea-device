@@ -85,7 +85,7 @@
           <section>
             <div class="container">
               <section class="section">
-                <h2 class="section-title section-title--white section-title">КОРЗИНА</h2>
+                <h2 class="section-title section-title--white">КОРЗИНА</h2>
                 <div class="breadcrambs">
                   <ul class="breadcrambs__list">
                     <li class="breadcrambs__item"> <a class="breadcrambs__link" href="/">Главная</a></li>
@@ -281,8 +281,60 @@
                             <div class="basket-cheque__total-text">Итого: </div>
                             <div class="basket-cheque__total-sum">200 000 000 р.</div>
                           </div>
+                          <div class="basket-cheque__btns"><a class="btn basket-cheque__btn" href="#sectionRequest">Оформить</a></div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="section" id="sectionOrder">
+                  <div class="basket-order">
+                    <div class="basket-order__left">
+                      <h2 class="section-title section-title--white">Отправьте заявку</h2>
+                      <p class="basket-order__text">Наш менеджер свяжется с вами в течение 10 минут</p>
+                    </div>
+                    <div class="basket-order__right">
+                      <form class="basket-form" id="basketOrderForm" action="" method="post">
+                        <div class="basket-form__row error">
+                          <label class="label" for="name">
+                            <input class="input" type="text" placeholder="ФИО" name="name" required>
+                          </label>
+                          <div class="error-massage">Заполните поле</div>
+                        </div>
+                        <div class="basket-form__row">
+                          <label class="label" for="company">
+                            <input class="input" type="text" placeholder="Компания" name="company" required>
+                          </label>
+                          <div class="error-massage">Заполните поле</div>
+                        </div>
+                        <div class="basket-form__row">
+                          <label class="label" for="email">
+                            <input class="input" type="email" placeholder="E-mail" name="email" required>
+                          </label>
+                          <div class="error-massage">Заполните поле</div>
+                        </div>
+                        <div class="basket-form__row">
+                          <label class="label" for="phone">
+                            <input class="input" type="tel" placeholder="Телефон" name="phone" required>
+                          </label>
+                          <div class="error-massage">Заполните поле</div>
+                        </div>
+                        <div class="basket-form__row">
+                          <label class="label" for="inn">
+                            <input class="input" type="text" placeholder="ИНН" name="inn">
+                          </label>
+                        </div>
+                        <div class="basket-form__row">
+                          <label class="label" for="comment">
+                            <textarea class="textarea" name="comment" cols="30" rows="5" placeholder="Комментарий"></textarea>
+                          </label>
+                        </div>
+                        <div class="basket-form__row">
+                          <div class="basket-form__btns">
+                            <button class="btn" type="submit">Отправить</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </section>

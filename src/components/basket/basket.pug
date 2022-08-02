@@ -1,5 +1,5 @@
 section.section
-  h2.section-title.section-title--white(class=menuHref!=='/' ? 'section-title' : 'section-title section-title--white') КОРЗИНА
+  h2.section-title.section-title--white КОРЗИНА
   .breadcrambs
     ul.breadcrambs__list
       li.breadcrambs__item  
@@ -46,4 +46,38 @@ section.section
             .basket-cheque__total
               .basket-cheque__total-text Итого: 
               .basket-cheque__total-sum 200 000 000 р.
-  
+            .basket-cheque__btns
+              a.btn.basket-cheque__btn(href="#sectionRequest") Оформить
+  section.section#sectionOrder
+    .basket-order
+      .basket-order__left
+        h2.section-title.section-title--white Отправьте заявку
+        p.basket-order__text Наш менеджер свяжется с вами в течение 10 минут
+      .basket-order__right
+        form.basket-form#basketOrderForm(action="" method="post")
+          .basket-form__row.error
+            label.label(for="name")
+              input.input(type="text" placeholder="ФИО" name="name" required)
+            .error-massage Заполните поле
+          .basket-form__row
+            label.label(for="company")
+              input.input(type="text" placeholder="Компания" name="company" required)
+            .error-massage Заполните поле
+          .basket-form__row
+            label.label(for="email")
+              input.input(type="email" placeholder="E-mail" name="email" required)
+            .error-massage Заполните поле
+          .basket-form__row
+            label.label(for="phone")
+              input.input(type="tel" placeholder="Телефон" name="phone" required)
+            .error-massage Заполните поле
+          .basket-form__row
+            label.label(for="inn")
+              input.input(type="text" placeholder="ИНН" name="inn")
+          .basket-form__row
+            label.label(for="comment")
+              textarea.textarea(name="comment", cols="30", rows="5" placeholder="Комментарий")
+          .basket-form__row
+            .basket-form__btns
+              button.btn(type="submit") Отправить
+

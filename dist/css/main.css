@@ -495,6 +495,7 @@ a {
 
 button {
   transition: all 0.3s ease;
+  border: none;
 }
 
 .btn {
@@ -682,6 +683,66 @@ button {
 }
 .breadcrambs--grey .breadcrambs__link:hover {
   color: #6c757d;
+}
+
+.label {
+  display: block;
+  border-radius: 6px;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #006EAD;
+  border-radius: 6px;
+}
+.input:focus {
+  border: 2px solid #006EAD;
+  outline: none;
+}
+.input::placeholder {
+  color: #6DB5DD;
+}
+
+.textarea {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #006EAD;
+  border-radius: 6px;
+}
+.textarea:focus {
+  border: 2px solid #006EAD;
+  outline: none;
+}
+.textarea::placeholder {
+  color: #6DB5DD;
+}
+
+.error input {
+  border: 2px solid #dd1616;
+}
+.error .error-massage {
+  display: block;
+}
+
+.error-massage {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #dd1616;
+  font-size: 0.75rem;
+  line-height: 1;
 }
 
 /* Titles
@@ -2408,6 +2469,39 @@ button.swiper-pagination-bullet {
 .basket-cheque__total-sum {
   font-size: 1.25rem;
   font-weight: 600;
+}
+.basket-cheque__btns {
+  margin-top: 30px;
+}
+.basket-order {
+  display: flex;
+}
+.basket-order__left {
+  width: 40%;
+  padding-right: 15px;
+}
+.basket-order__text {
+  color: #fff;
+}
+.basket-order__right {
+  width: 60%;
+}
+.basket-form__row {
+  margin-top: 10px;
+  position: relative;
+}
+.basket-form__row:first-child {
+  margin-top: 0;
+}
+.basket-form__row .input {
+  background-color: rgba(248, 251, 255, 0.65);
+}
+.basket-form__row .textarea {
+  background-color: rgba(248, 251, 255, 0.65);
+}
+.basket-form__btns {
+  display: flex;
+  justify-content: right;
 }
 
 .card {
