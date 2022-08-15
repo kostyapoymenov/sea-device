@@ -1,0 +1,39 @@
+extends base/pug/base-header-transparent
+
+append variables
+  - var title = 'Услуги'
+  - var pageClass = 'services-pages'
+  - var menuHref = '/services-pages'
+
+mixin servicesItemPage(item)
+  a.services-link(href="")
+    .services-link__icon 
+      img(src="data:image/svg+xml;base64," + item.img, alt=item.name)
+    .services-link__name= item.name
+    .services-link__arrow
+      svg(width='17', height='30', viewbox='0 0 17 30', fill='none', xmlns='http://www.w3.org/2000/svg')
+        path(d='M2 2L14 15L2 28', stroke='#6EC2F4', stroke-width='3', stroke-linecap='round')
+    .services-link__bg
+
+block center-position
+  main
+    section.section-bg
+      include components/header-main/header-main
+      .container
+        section.section
+          h2.section-title.section-title--white Услуги
+          .breadcrambs
+            ul.breadcrambs__list
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Главная
+              li.breadcrambs__item  
+                span Услуги
+              //- li.breadcrambs__item  
+              //-   span Какая-то услуга 1
+          .services-list
+            each item in servicesData
+              +servicesItemPage(item)
+              
+
+
+        
