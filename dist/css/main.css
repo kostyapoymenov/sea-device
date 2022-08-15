@@ -2652,15 +2652,19 @@ button.swiper-pagination-bullet {
   display: flex;
 }
 .product__slider {
-  flex: 1;
-  max-width: 360px;
+  width: 40%;
+  min-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product__slider img {
+  max-width: 360px;
   width: 100%;
 }
 .product__detail {
-  flex: 1;
-  padding-left: 75px;
+  width: 60%;
+  padding-left: 125px;
 }
 .product__title {
   font-size: 1.875rem;
@@ -2709,7 +2713,7 @@ button.swiper-pagination-bullet {
   transition: all 0.3s ease;
 }
 .product__btns {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .product__description {
   margin-top: 45px;

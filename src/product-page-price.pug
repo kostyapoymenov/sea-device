@@ -38,18 +38,18 @@ block center-position
                       .card__price-new 50 000 р. 
                     .card__price-sale
                       .card__sale 50%
-                .product__quantity
+                .product__quantity(style="display: none")
                   .product__quantity-title Количество
                   .counter
                     input.counter__input(type="text" name="count" value="100")
                     .counter__btn.counter__btn-minus —
                     .counter__btn.counter__btn-plus +
+                .product__btns 
+                  button.btn(type="button") В корзину
                 .product__docs
                   a.product__docs-link(href="") Сертификат 1
                   a.product__docs-link(href="") Сертификат 2
                   a.product__docs-link(href="") Сертификат 3
-                .product__btns 
-                  button.btn(type="button") В корзину
             .product__description
               ul.product-tabs
                 li.product-tabs__item.active Описание
