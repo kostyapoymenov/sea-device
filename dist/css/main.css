@@ -1636,7 +1636,8 @@ button.swiper-pagination-bullet {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  align-items: right;
+  right: -30px;
+  position: relative;
 }
 .header-top__call_btn {
   background: none;
@@ -1664,6 +1665,9 @@ button.swiper-pagination-bullet {
 }
 .header--blue {
   background-color: #002963;
+  background-image: url("../images/bg/main-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .header-bottom {
