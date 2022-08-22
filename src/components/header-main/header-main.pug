@@ -5,15 +5,19 @@ header.header
         .header-top__left 
           include ../logo/logo
         .header-top__right
-          .header-top__info
-            .header-top__adress г. Санкт-Петербург, ул. Новостроек, 29 2
-            a.header-top__email(href="mailto:info@seadevice.ru") info@seadevice.ru
+          .header-search.header-top__info
+            form.search-field(action="")
+              input.search-field__input(type="search" placeholder="Что ищете?" name="search") 
+              button.search-field__btn(type="submit")
+                +icon("search")
+          //- .header-top__info
+          //-   .header-top__adress г. Санкт-Петербург, ул. Новостроек, 29 2
+          //-   a.header-top__email(href="mailto:info@seadevice.ru") info@seadevice.ru
           .header-top__call
             a.header-top__phone(href="tel:89999999999") 
               +icon("phone")
               span 8 (999) 999-99-99
             button.header-top__call_btn Заказать звонок
   include ../header-bottom/header-bottom
-  include ../mainmenu/mainmenu
 
 

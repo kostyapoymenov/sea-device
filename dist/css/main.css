@@ -1640,7 +1640,6 @@ button.swiper-pagination-bullet {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  right: -30px;
   position: relative;
 }
 .header-top__call_btn {
@@ -1705,6 +1704,7 @@ button.swiper-pagination-bullet {
 }
 
 .search-field {
+  width: 100%;
   position: relative;
   height: 40px;
   overflow: hidden;

@@ -23,8 +23,15 @@
                   <div class="header-top-wrapp">
                     <div class="header-top__left"> <a class="logo__link" href="/"><img src="./images/logo/logo.png" alt=""></a></div>
                     <div class="header-top__right">
-                      <div class="header-top__info">
-                        <div class="header-top__adress">г. Санкт-Петербург, ул. Новостроек, 29 2</div><a class="header-top__email" href="mailto:info@seadevice.ru">info@seadevice.ru</a>
+                      <div class="header-search header-top__info">
+                        <form class="search-field" action="">
+                          <input class="search-field__input" type="search" placeholder="Что ищете?" name="search">
+                          <button class="search-field__btn" type="submit">
+                            <svg class="icon icon-search ">
+                              <use xlink:href="./images/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
                       </div>
                       <div class="header-top__call"><a class="header-top__phone" href="tel:89999999999"> 
                           <svg class="icon icon-phone ">
@@ -43,16 +50,24 @@
                         <svg class="icon icon-catalog ">
                           <use xlink:href="./images/sprite.svg#catalog"></use>
                         </svg><span>Каталог</span></a></div>
-                    <div class="header-search">
-                      <form class="search-field" action="">
-                        <input class="search-field__input" type="search" placeholder="Что ищете?" name="search">
-                        <button class="search-field__btn" type="submit">
-                          <svg class="icon icon-search ">
-                            <use xlink:href="./images/sprite.svg#search"></use>
-                          </svg>
-                        </button>
-                      </form>
-                    </div>
+                    <nav class="mainmenu">
+                      <ul class="mainmenu__list">
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/stocks.html">Акции</a>
+                                            </li>
+                                            <li class="mainmenu__item  mainmenu__item--sale"><a class="mainmenu__item-link" href="#sales">Скидки</a>
+                                            </li>
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/catalog.html">Оборудование</a>
+                                            </li>
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/uslugi.html">Услуги</a>
+                                            </li>
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/#.html">О компании</a>
+                                            </li>
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/news.html">Новости</a>
+                                            </li>
+                                            <li class="mainmenu__item"><a class="mainmenu__item-link" href="/#.html">Контакты</a>
+                                            </li>
+                      </ul>
+                    </nav>
                     <div class="header-basket"><a class="basket__link" href="">
                         <div class="basket__link-icon">
                           <svg class="icon icon-basket ">
@@ -62,24 +77,6 @@
                   </div>
                 </div>
               </div>
-              <nav class="mainmenu">
-                <ul class="mainmenu__list">
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/stocks.html">Акции</a>
-                                </li>
-                                <li class="mainmenu__item  mainmenu__item--sale"><a class="mainmenu__item-link" href="#sales">Скидки</a>
-                                </li>
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/catalog.html">Оборудование</a>
-                                </li>
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/uslugi.html">Услуги</a>
-                                </li>
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/#.html">О компании</a>
-                                </li>
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/news.html">Новости</a>
-                                </li>
-                                <li class="mainmenu__item"><a class="mainmenu__item-link" href="/#.html">Контакты</a>
-                                </li>
-                </ul>
-              </nav>
             </header>
             <div class="container">
               <section class="section">

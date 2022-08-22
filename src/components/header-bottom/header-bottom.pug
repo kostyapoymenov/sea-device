@@ -5,11 +5,12 @@
         a.header-catalog__link(href="")
           +icon("catalog")
           span Каталог
-      .header-search
-        form.search-field(action="")
-          input.search-field__input(type="search" placeholder="Что ищете?" name="search") 
-          button.search-field__btn(type="submit")
-            +icon("search")
+      include ../mainmenu/mainmenu
+      //- .header-search
+      //-   form.search-field(action="")
+      //-     input.search-field__input(type="search" placeholder="Что ищете?" name="search") 
+      //-     button.search-field__btn(type="submit")
+      //-       +icon("search")
       .header-basket
         a.basket__link(href="")
           .basket__link-icon
