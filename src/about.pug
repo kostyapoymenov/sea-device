@@ -1,0 +1,66 @@
+extends base/pug/base-header-transparent
+
+append variables
+  - var title = 'О компании'
+  - var pageClass = 'about-page'
+  - var menuHref = '/about'
+
+block center-position
+  main
+    section.section-bg.section-double--main
+      include components/header-main/header-main
+      section.section 
+        .container 
+          h2.section-title.section-title--white О компании
+          .breadcrambs
+            ul.breadcrambs__list
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Главная
+              li.breadcrambs__item  
+                span О компании
+          .about
+            .about-block.about-block--text
+              .text-block
+                p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+                ul.text-block__list
+                  li Поставка, продажа, проектирование
+                  li Поставка, продажа, проектирование
+                  li Поставка, продажа, проектирование
+                p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+            .about-block.about-block--img
+              img(src="images/stocks/stock-1.png", alt="")
+          .about.about-reverse
+            .about-block.about-block--img
+              img(src="images/stocks/stock-1.png", alt="")
+            .about-block.about-block--text
+              .text-block
+                p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+                ul.text-block__list
+                  li Поставка, продажа, проектирование
+                  li Поставка, продажа, проектирование
+                  li Поставка, продажа, проектирование
+                p.text-block__paragraph Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.Поставка, продажа, проектирование, монтаж, ПНР сертифицированного радионавигационного оборудования, средств радио связи.
+          //- .about-pictures
+          //-   img(src="images/stocks/stock-1.png", alt="") 
+      section.section 
+        .container
+          h2.section-title.section-title--white Презентации
+          .presentation
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
+            a.presentation__item(href="#") 
+              +icon('pdf') 
+              span.presentation__name презентация компании
