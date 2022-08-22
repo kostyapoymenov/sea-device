@@ -1,0 +1,39 @@
+extends base/pug/base-header-transparent
+
+append variables
+  - var title = 'Контакты'
+  - var pageClass = 'contacts-page'
+  - var menuHref = '/contacts'
+
+block center-position
+  main
+    section.section-bg.section-double--main
+      include components/header-main/header-main
+      section.section 
+        .container 
+          h2.section-title.section-title--white Контакты
+          .breadcrambs
+            ul.breadcrambs__list
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Главная
+              li.breadcrambs__item  
+                span Контакты
+          .contacts.grid.grid--3
+            .contacts__block.grid.grid--3
+              .contacts__block-left
+                .contacts__name Тел.
+                  a.contacts__link(href="tel:+78126270271") +7 812 6 270 271
+                  a.contacts__link(href="tel:+78126270271") +7 812 6 270 271
+              .contacts__block-left
+                .contacts__name E-mail
+                  a.contacts__link(href="mailto:info@seadevice.ru") info@seadevice.ru
+            .contacts__block
+              .contacts__block-content
+                .contacts__name Главный офис
+                  .contacts__text 198152, г. Санкт-Петербург, ул. Новостроек, 29
+              .contacts__block-content
+                a.contacts__link(href="/") Скачать карточку организации
+          
+      section.section.section-advantages
+        .container
+          include ./components/partners/partners
