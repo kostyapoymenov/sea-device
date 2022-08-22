@@ -642,7 +642,7 @@ button {
   text-decoration: none;
 }
 .breadcrambs__item:last-child .breadcrambs__link:hover {
-  color: #ced4da;
+  color: #fff;
   cursor: default;
 }
 .breadcrambs__item::before {
@@ -652,24 +652,24 @@ button {
   left: 6px;
   height: 15px;
   width: 10px;
-  color: #ced4da;
+  color: #fff;
   font-size: 0.875rem;
   line-height: 1rem;
 }
 .breadcrambs span {
   font-size: 0.875rem;
   line-height: 0.875rem;
-  color: #ced4da;
+  color: #fff;
   text-decoration: none;
 }
 .breadcrambs__link {
   font-size: 0.875rem;
   line-height: 0.875rem;
-  color: #ced4da;
+  color: #fff;
   text-decoration: underline;
 }
 .breadcrambs__link:hover {
-  color: #6c757d;
+  color: #adb5bd;
 }
 .breadcrambs--grey .breadcrambs__item::before {
   color: #adb5bd;
@@ -2646,11 +2646,13 @@ button.swiper-pagination-bullet {
 }
 
 .section-product {
-  padding-top: 40px;
+  padding-top: 0;
 }
 
 .product {
   padding: 40px 50px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 .product__preview {
   display: flex;

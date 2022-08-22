@@ -1,4 +1,4 @@
-extends base/pug/base-header-blue
+extends base/pug/base-header-transparent
 
 append variables
   - var title = 'ЛИНЕМЕТ УЛМ-1'
@@ -7,68 +7,70 @@ append variables
 
 block center-position
   main
-    section.section
-      .container
-        .breadcrambs.breadcrambs--grey
-          ul.breadcrambs__list
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="/") Главная
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="/") Каталог
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="/") Навигационные системы
-            li.breadcrambs__item  
-              a.breadcrambs__link(href="/") Компасы
-            li.breadcrambs__item  
-              span ЛИНЕМЕТ УЛМ-1
-
+    section.section-bg.section-double--main
+      include components/header-main/header-main
+      section.section 
+        .container 
+          .breadcrambs
+            ul.breadcrambs__list
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Главная
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Каталог
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Навигационные системы
+              li.breadcrambs__item  
+                a.breadcrambs__link(href="/") Компасы
+              li.breadcrambs__item  
+                span ЛИНЕМЕТ УЛМ-1
         section.section.section-product
-          .product
-            .product__preview
-              .product__slider
-                img(src="./images/products/product-1.png", alt="")
-              .product__detail
-                .product__title ЛИНЕМЕТ УЛМ-1
-                .product__subtitle Можно добавить текст
-                .product__price 
-                  .product__price-text Уточняйте стоимость у менеджеров
-                  .card__price(style="display: none")
-                    .card__price-cost
-                      .card__price-old 100 000 р. 
-                      .card__price-new 50 000 р. 
-                    .card__price-sale
-                      .card__sale 50%
-                .product__btns 
-                  button.btn(type="button") В корзину
-                .product__quantity(style="display: none")
-                  .product__quantity-title Количество
-                  .counter
-                    input.counter__input(type="text" name="count" value="100")
-                    .counter__btn.counter__btn-minus —
-                    .counter__btn.counter__btn-plus +
-                .product__docs
-                  a.product__docs-link(href="") Сертификат 1
-                  a.product__docs-link(href="") Сертификат 2
-                  a.product__docs-link(href="") Сертификат 3
-            .product__description
-              ul.product-tabs
-                li.product-tabs__item.active Описание
-                li.product-tabs__item Дополнительная информация
-              .product-tabs-body
-                .text-block 
-                  p.text-block__paragraph
-                    b Saura T-130 VB 
-                    | - это компактный магнитный компас,который также называется путевым. Имеет одобрение Морского и Речного регистров. Благодаря небольшим размерам компас прост в установке и не занимает много места. Рекомендован к использованию на небольших судах в качестве путевого компаса. Подсветка картушки осуществляется сверху. 
-                  p.text-block__paragraph
-                    b Saura T-130 VB
-                    | - это компактный магнитный компас,который также называется путевым. Имеет одобрение Морского и Речного регистров. Благодаря небольшим размерам компас прост в установке и не занимает много места. Рекомендован к использованию на небольших судах в качестве путевого компаса. Подсветка картушки осуществляется сверху. 
-                  ul.text-block__list
-                    li компактный магнитный компас
-                    li путевой
-                    li морского и Речного регистров
- 
-     
-     
+          .container
+            .product
+              .product__preview
+                .product__slider
+                  img(src="./images/products/product-1.png", alt="")
+                .product__detail
+                  .product__title ЛИНЕМЕТ УЛМ-1
+                  .product__subtitle Можно добавить текст
+                  .product__price 
+                    .product__price-text Уточняйте стоимость у менеджеров
+                    .card__price(style="display: none")
+                      .card__price-cost
+                        .card__price-old 100 000 р. 
+                        .card__price-new 50 000 р. 
+                      .card__price-sale
+                        .card__sale 50%
+                  .product__btns 
+                    button.btn(type="button") В корзину
+                  .product__quantity(style="display: none")
+                    .product__quantity-title Количество
+                    .counter
+                      input.counter__input(type="text" name="count" value="100")
+                      .counter__btn.counter__btn-minus —
+                      .counter__btn.counter__btn-plus +
+                  .product__docs
+                    a.product__docs-link(href="") Сертификат 1
+                    a.product__docs-link(href="") Сертификат 2
+                    a.product__docs-link(href="") Сертификат 3
+              .product__description
+                ul.product-tabs
+                  li.product-tabs__item.active Описание
+                  li.product-tabs__item Дополнительная информация
+                .product-tabs-body
+                  .text-block 
+                    p.text-block__paragraph
+                      b Saura T-130 VB 
+                      | - это компактный магнитный компас,который также называется путевым. Имеет одобрение Морского и Речного регистров. Благодаря небольшим размерам компас прост в установке и не занимает много места. Рекомендован к использованию на небольших судах в качестве путевого компаса. Подсветка картушки осуществляется сверху. 
+                    p.text-block__paragraph
+                      b Saura T-130 VB
+                      | - это компактный магнитный компас,который также называется путевым. Имеет одобрение Морского и Речного регистров. Благодаря небольшим размерам компас прост в установке и не занимает много места. Рекомендован к использованию на небольших судах в качестве путевого компаса. Подсветка картушки осуществляется сверху. 
+                    ul.text-block__list
+                      li компактный магнитный компас
+                      li путевой
+                      li морского и Речного регистров
+  
+      
+      
      
 
 
