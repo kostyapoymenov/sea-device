@@ -8,12 +8,18 @@
     flex-direction: column
     width: 100%
 
-  &__img 
-    max-width: 210px
-    max-height: 210px
+  &__img
+    width: 100%
+    @include media_768
+      text-align: center
 
     img 
-      width: 100%
+      max-width: 210px
+      max-height: 210px
+
+      @include media_768
+        max-width: 180px
+        max-height: 180px
 
   .grid .col
     justify-items: start
@@ -25,6 +31,9 @@
       display: flex
       align-items: center
       margin-top: 35px
+
+      @include media_768
+        margin-top: 10px
 
   &__icon 
     width: 45px
@@ -40,3 +49,6 @@
     font-weight: 300
     color: $blueDark
     padding-left: 25px
+
+    @include media_768
+      font-size: 1rem

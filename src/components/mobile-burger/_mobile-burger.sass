@@ -1,0 +1,130 @@
+.burger-block 
+  display: none
+  width: 35px
+  height: 50px
+  position: fixed
+  overflow: hidden
+  top: 20px
+  right: 30px
+  z-index: 300
+  border-radius: 30px
+  padding: 0 15px
+  width: 65px
+  background-color: #006ead
+
+  @include media_992
+    display: block
+
+  @include media_576
+    top: 16px
+
+  @include media_450
+    top: 10px
+
+.burger 
+  display: block
+  width: 100%
+  height: 100%
+  transition: all .4s
+  cursor: pointer
+  position: relative
+  &--active 
+    .burger__line--1 
+      animation: burgerline1 .4s forwards
+    
+    .burger__line--2 
+      animation: burgerline2 .4s forwards
+    
+    .burger__line--3 
+      animation: burgerline3 .4s forwards
+   
+.burger__line 
+  width: 100%
+  height: 3px
+  position: absolute
+  left: 0
+  background: $white
+  transition: all .4s
+  pointer-events: none
+  border-radius: 3px
+  &--1 
+    top: 16px
+  &--2 
+    top: 24px
+    transition: burgerline2base .4s forwards
+  &--3 
+    top: 32px
+
+@keyframes burgerline1 
+  0% 
+    top: 16px
+  50% 
+    top: 24px
+    transform: rotate(0)
+  100% 
+    top: 24px
+    transform: rotate(45deg)
+
+@keyframes burgerline2 
+  100% 
+    opacity: 0
+
+@keyframes burgerline2base 
+  0%
+    opacity: 0
+  100% 
+    opacity: 1
+
+@keyframes burgerline3 
+  0% 
+    top: 32px
+  50% 
+    top: 24px
+    transform: rotate(0)
+  100% 
+    top: 24px
+    transform: rotate(-45deg)
+
+.burger-menu  
+  display: flex
+  position: fixed
+  background-color: $blueDark
+  top: 0
+  right: -1000px
+  bottom: 0
+  min-width: 320px
+  padding-top: 70px
+  z-index: 200
+  transition: .5s ease-out all
+  background-image: url('../images/bg/mobile-menu-bg.png')
+  background-size: cover
+  background-repeat: no-repeat
+
+  @include media_576
+    width: 100%
+
+  &.burger-menu--active 
+    position: fixed
+    right: 0px    
+    border-left: 1px solid $blueLight
+    transition: .5s ease-out all
+
+.burger-nav 
+  // height: 60%
+  width: 100%
+
+.burger-nav__item 
+  text-align: center
+
+.burger-nav__link
+  display: inline-block
+  position: relative
+  padding: 10px 20px
+  width: 100%
+  font-size: 1.25rem
+  color: $white
+  transition: $transitionAll
+  &:hover
+    color: $orange
+    transition: $transitionAll
+    

@@ -1,9 +1,20 @@
 .partners
   display: flex
 
+  @include media_768
+    flex-direction: column
+
   &__block 
     margin-bottom: 40px
     padding-left: 20px
+    @include media_768
+      margin-left: 30px
+    
+    &:first-child
+      @include media_768
+        margin-left: 0
+      
+
     &:last-child
       margin-bottom: 0
 
@@ -60,6 +71,10 @@
       cursor: pointer
       transition: $transitionAll
 
+  &__left
+    @include media_768
+      display: flex
+
   &__right
     position: relative
 
@@ -94,7 +109,8 @@
     font-size: 1rem
     font-weight: 200
     line-height: 1
-    color: $blueDark
+    color: $blueDark    
+    z-index: 2
   
   &.active
     .partners__dot-text

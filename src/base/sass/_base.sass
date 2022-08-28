@@ -10,7 +10,8 @@ body
     background-size: cover
     background-repeat: no-repeat
     background-position: center
-
+  &.body-hidden
+    overflow: hidden
 
 .container 
   max-width: $mw-xxl
@@ -35,6 +36,10 @@ button
   background-color: $orangeDark
   border-radius: $border-radius
   transition: $transitionAll
+
+  @include media_768
+    padding: 10px 30px
+    font-size: 1rem
 
   &:hover 
     background-color: $orange
@@ -75,15 +80,19 @@ button
   display: grid
   grid-gap: 32px
 
+  @include media_768
+    grid-gap: 20px
+
 .grid .col 
   display: grid
   place-items: center
+  min-height: 250px
 
 .grid.grid--1 
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
 
 .grid.grid--2 
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
 
 .grid.grid--3
   grid-template-columns: repeat(2, 1fr)

@@ -27,6 +27,20 @@ const swiperSales = new Swiper('#salesSlider', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    900: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    }
+  }
 });
 
 const swiperStocks = new Swiper('#stocksSlider', {
@@ -47,4 +61,15 @@ const swiperStocks = new Swiper('#stocksSlider', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    }
+  }
 });
