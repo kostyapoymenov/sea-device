@@ -29,17 +29,21 @@ const swiperSales = new Swiper('#salesSlider', {
   },
   breakpoints: {
     0: {
+      slidesPerGroup: 1,
       slidesPerView: 1,
     },
     600: {
+      slidesPerGroup: 2,
       slidesPerView: 2,
     },
     900: {
+      slidesPerGroup: 3,
       slidesPerView: 3,
     },
-    992: {
+    1100: {
+      slidesPerGroup: 4,
       slidesPerView: 4,
-    }
+    },
   }
 });
 

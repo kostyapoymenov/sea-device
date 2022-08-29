@@ -488,8 +488,8 @@ body.body-hidden {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 30px;
+  padding: 0 15px;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -1615,6 +1615,11 @@ button.swiper-pagination-bullet {
 .header-top {
   border-bottom: 1px solid #006EAD;
 }
+@media (max-width: 992px) {
+  .header-top {
+    background-color: #006EAD;
+  }
+}
 @media (max-width: 768px) {
   .header-top {
     border-bottom: none;
@@ -1820,6 +1825,11 @@ button.swiper-pagination-bullet {
 }
 .search-field__btn:hover {
   background-color: #6DB5DD;
+}
+@media (max-width: 992px) {
+  .search-field__btn {
+    background-color: #6DB5DD;
+  }
 }
 .search-field .icon-search {
   color: #fff;
@@ -2828,7 +2838,7 @@ button.swiper-pagination-bullet {
   position: fixed;
   overflow: hidden;
   top: 20px;
-  right: 30px;
+  right: 15px;
   z-index: 300;
   border-radius: 30px;
   padding: 0 15px;
