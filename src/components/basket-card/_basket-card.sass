@@ -6,6 +6,9 @@
   margin-bottom: 15px
   display: flex
 
+  @include media_576
+    flex-direction: column
+
   &:last-child
     margin-bottom: 0
 
@@ -26,6 +29,10 @@
     color: $blueDark
     font-weight: 600
     padding-right: 40px
+    display: inline-block
+
+    @include media_1200
+    font-size: 1.25rem
 
   &__bottom
     display: flex
@@ -33,9 +40,16 @@
     justify-content: space-between
     margin-top: 40px
 
+    @include media_380
+      align-items: inherit
+      flex-direction: column
+
   &__price
     display: flex
     align-items: flex-end
+
+    @include media_380
+    margin-bottom: 10px
 
     &-old
       position: relative
@@ -43,6 +57,9 @@
       font-weight: 400
       color: #D0D9DE
       display: inline-block
+
+      @include media_576
+        font-size: 1rem
 
       &::after
         content:''
@@ -53,11 +70,13 @@
         height: 1px 
         background-color: #D0D9DE
 
-    &-new
-      font-size: 1.563rem
+    &-new 
       font-weight: 700
       color: $black
       display: block
+
+      @include media_576
+        font-size: 1.375rem
   
   &__sale
     background-color: #6EC2F4
