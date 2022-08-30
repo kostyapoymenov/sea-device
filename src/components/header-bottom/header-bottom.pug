@@ -1,5 +1,10 @@
 .header-bottom
   .container
+    .mobile-search
+      form.search-field(action="")
+        input.search-field__input(type="search" placeholder="Что ищете?" name="search") 
+        button.search-field__btn(type="submit")
+          +icon("search")
     .header-bottom__wrapp 
       .header-catalog
         a.header-catalog__link(href="")

@@ -1,11 +1,11 @@
 burger();
 function burger(){
-  const   burgerBtn = $('.burger'),
+  const   burgerBtn = $('.burger-block'),
           burgerItem = $('.burger-nav__link'),
           burgerMenu = $('.burger-menu');
 
   burgerBtn.on('click', function(){
-    burgerBtn.toggleClass('burger--active');
+    burgerBtn.toggleClass('burger-block--active');
     burgerMenu.toggleClass('burger-menu--active');
     if(burgerBtn.hasClass('burger--active')){
       $('body').addClass('body-hidden');

@@ -2,14 +2,13 @@
   padding-bottom: 20px
   
   &-top
-    border-bottom: 1px solid $blueDark
+    border-bottom: 1px solid #0069a6
 
     @include media_992
-      background-color: $blueDark
+      background-color: #0069a6
 
     @include media_768
       border-bottom: none
-      background-color: $blueDark
     
     &-wrapp
       display: flex
@@ -73,6 +72,9 @@
       justify-content: center
       flex-direction: column
       position: relative
+
+      @include media_992
+        background-color: #0069a6
 
       @include media_768
         background-color: transparent

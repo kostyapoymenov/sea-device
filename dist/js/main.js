@@ -27,11 +27,11 @@ __webpack_require__.r(__webpack_exports__);
 burger();
 
 function burger() {
-  var burgerBtn = $('.burger'),
+  var burgerBtn = $('.burger-block'),
       burgerItem = $('.burger-nav__link'),
       burgerMenu = $('.burger-menu');
   burgerBtn.on('click', function () {
-    burgerBtn.toggleClass('burger--active');
+    burgerBtn.toggleClass('burger-block--active');
     burgerMenu.toggleClass('burger-menu--active');
 
     if (burgerBtn.hasClass('burger--active')) {

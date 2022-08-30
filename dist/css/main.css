@@ -542,12 +542,26 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 768px) {
+  .section-bg {
+    background-image: url(../images/bg/bg-mobile.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat;
+  }
+}
 
 .section--bg-blue {
   background-image: url(../images/bg/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 768px) {
+  .section--bg-blue {
+    background-image: url(../images/bg/bg-mobile.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat;
+  }
 }
 
 .grid {
@@ -1613,17 +1627,16 @@ button.swiper-pagination-bullet {
   padding-bottom: 20px;
 }
 .header-top {
-  border-bottom: 1px solid #006EAD;
+  border-bottom: 1px solid #0069a6;
 }
 @media (max-width: 992px) {
   .header-top {
-    background-color: #006EAD;
+    background-color: #0069a6;
   }
 }
 @media (max-width: 768px) {
   .header-top {
     border-bottom: none;
-    background-color: #006EAD;
   }
 }
 .header-top-wrapp {
@@ -1698,6 +1711,11 @@ button.swiper-pagination-bullet {
   justify-content: center;
   flex-direction: column;
   position: relative;
+}
+@media (max-width: 992px) {
+  .header-top__call {
+    background-color: #0069a6;
+  }
 }
 @media (max-width: 768px) {
   .header-top__call {
@@ -1875,6 +1893,16 @@ button.swiper-pagination-bullet {
   font-size: 0.715rem;
   line-height: 0.715rem;
   color: #fff;
+}
+
+.mobile-search {
+  display: none;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .mobile-search {
+    display: block;
+  }
 }
 
 .logo__link {
@@ -2843,7 +2871,19 @@ button.swiper-pagination-bullet {
   border-radius: 30px;
   padding: 0 15px;
   width: 65px;
-  background-color: #006ead;
+  background-color: #0069a6;
+}
+.burger-block--active {
+  background-color: transparent;
+}
+.burger-block--active .burger__line--1 {
+  animation: burgerline1 0.4s forwards;
+}
+.burger-block--active .burger__line--2 {
+  animation: burgerline2 0.4s forwards;
+}
+.burger-block--active .burger__line--3 {
+  animation: burgerline3 0.4s forwards;
 }
 @media (max-width: 992px) {
   .burger-block {
@@ -2868,15 +2908,6 @@ button.swiper-pagination-bullet {
   transition: all 0.4s;
   cursor: pointer;
   position: relative;
-}
-.burger--active .burger__line--1 {
-  animation: burgerline1 0.4s forwards;
-}
-.burger--active .burger__line--2 {
-  animation: burgerline2 0.4s forwards;
-}
-.burger--active .burger__line--3 {
-  animation: burgerline3 0.4s forwards;
 }
 
 .burger__line {

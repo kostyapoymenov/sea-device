@@ -10,7 +10,17 @@
   border-radius: 30px
   padding: 0 15px
   width: 65px
-  background-color: #006ead
+  background-color: #0069a6
+  &--active 
+    background-color: transparent
+    .burger__line--1 
+      animation: burgerline1 .4s forwards
+    
+    .burger__line--2 
+      animation: burgerline2 .4s forwards
+    
+    .burger__line--3 
+      animation: burgerline3 .4s forwards
 
   @include media_992
     display: block
@@ -28,15 +38,6 @@
   transition: all .4s
   cursor: pointer
   position: relative
-  &--active 
-    .burger__line--1 
-      animation: burgerline1 .4s forwards
-    
-    .burger__line--2 
-      animation: burgerline2 .4s forwards
-    
-    .burger__line--3 
-      animation: burgerline3 .4s forwards
    
 .burger__line 
   width: 100%
