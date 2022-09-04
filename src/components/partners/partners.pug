@@ -1,35 +1,51 @@
 h2.section-title НАШИ ФИЛИАЛЫ И ПАРТНЕРЫ
-.partners
+.partners#partners
   .partners__left
     .partners__block.partners__block--orange
       .partners__title Филиалы
       ul.partners__list
-        li.partners__item Санкт-Петербург
-        li.partners__item.active Ростов-на-Дону
-        li.partners__item Нижний Новгород
-        li.partners__item Красноярск
+        li.partners__item.active(data-nameCity="spb") Санкт-Петербург
+        li.partners__item(data-nameCity="rnd") Ростов-на-Дону
+        li.partners__item(data-nameCity="nn") Нижний Новгород
+        li.partners__item(data-nameCity="krn") Красноярск
     .partners__block.partners__block--blue
       .partners__title Партнеры
       ul.partners__list
-        li.partners__item Калининград
-        li.partners__item.active Новоросийск
-        li.partners__item Варна (Болгария)
-        li.partners__item Мурманск
-        li.partners__item Астрахань
-        li.partners__item Стамбул (Турция)
-        li.partners__item Архангельск
-        li.partners__item Владивосток
-        li.partners__item Рига (Латвия)
+        li.partners__item(data-nameCity="kln") Калининград
+        li.partners__item(data-nameCity="nvr") Новоросийск
+        li.partners__item(data-nameCity="var") Варна (Болгария)
+        li.partners__item(data-nameCity="mur") Мурманск
+        li.partners__item(data-nameCity="ast") Астрахань
+        li.partners__item(data-nameCity="sta") Стамбул (Турция)
+        li.partners__item(data-nameCity="arh") Архангельск
+        li.partners__item(data-nameCity="vld") Владивосток
+        li.partners__item(data-nameCity="rig") Рига (Латвия)
   .partners__right
     .partners__dots
-      .partners__dot.partners__dot--1.partners__dot--orange
+      .partners__dot.partners__dot--1.partners__dot--orange.active(data-dotCity="spb")
         .partners__dot-text Санкт-Петербург
-      .partners__dot.partners__dot--2.partners__dot--orange.active
+      .partners__dot.partners__dot--2.partners__dot--orange(data-dotCity="rnd")
         .partners__dot-text Ростов-на-Дону
-      .partners__dot.partners__dot--3.partners__dot--orange
+      .partners__dot.partners__dot--3.partners__dot--orange(data-dotCity="nn")
         .partners__dot-text Нижний Новгород
-      .partners__dot.partners__dot--4.partners__dot--orange
+      .partners__dot.partners__dot--4.partners__dot--orange(data-dotCity="krn")
         .partners__dot-text Красноярск
-      .partners__dot.partners__dot--5.active
+      .partners__dot.partners__dot--5(data-dotCity="kln")
         .partners__dot-text Калининград
+      .partners__dot.partners__dot--6(data-dotCity="nvr")
+        .partners__dot-text Новоросийск
+      .partners__dot.partners__dot--7(data-dotCity="var")
+        .partners__dot-text Варна (Болгария)
+      .partners__dot.partners__dot--8(data-dotCity="mur")
+        .partners__dot-text Мурманск
+      .partners__dot.partners__dot--9(data-dotCity="ast")
+        .partners__dot-text Астрахань
+      .partners__dot.partners__dot--10(data-dotCity="sta")
+        .partners__dot-text Стамбул (Турция)
+      .partners__dot.partners__dot--11(data-dotCity="arh")
+        .partners__dot-text Архангельск
+      .partners__dot.partners__dot--12(data-dotCity="vld")
+        .partners__dot-text Владивосток
+      .partners__dot.partners__dot--13(data-dotCity="rig")
+        .partners__dot-text Рига (Латвия)
     img(src="./images/partners/map-partners.png", alt="филиалы и партнеры")

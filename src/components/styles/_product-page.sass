@@ -6,8 +6,14 @@
   background-color: $white
   border-radius: $border-radius
 
+  @include media_768
+    padding: 40px 20px
+
   &__preview
     display: flex
+
+    @include media_768  
+      flex-direction: column
 
   &__slider
     // flex: 2
@@ -16,6 +22,15 @@
     display: flex
     align-items: center
     justify-content: center
+
+    @include media_992
+      width: 30%
+      min-width: inherit
+
+    @include media_768  
+      width: 100%
+      margin-bottom: 20px
+
     img
       max-width: 360px
       width: 100%
@@ -24,7 +39,15 @@
     // flex: 3
     width: 60%
     padding-left: 125px
-  
+
+    @include media_992
+      width: 70%
+      padding-left: 100px
+
+    @include media_768  
+      width: 100%
+      padding-left: 0
+
   &__title
     font-size: 1.875rem
     color: $blueDark
@@ -57,6 +80,8 @@
 
   &__docs
     margin-top: 40px
+    display: flex
+    flex-wrap: wrap
 
     &-link
       margin-right: 20px
@@ -65,6 +90,8 @@
       font-weight: 300
       text-decoration: underline
       transition: $transitionAll
+      white-space: nowrap
+      margin-bottom: 10px
       &:hover 
         color: $blue
         transition: $transitionAll
@@ -77,8 +104,35 @@
 
   &-tabs
     display: flex
+    position: relative
     width: 100%
     border-bottom: 1px solid $blueDark
+    overflow: hidden
+    padding: 0 40px
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 50px
+      height: 100%
+      background-color: $white
+      z-index: 2
+
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 50px
+      height: 100%
+      background-color: $white
+      z-index: 2
+
+    &__swiper-button
+      color: $blueLight
+
 
     &__item
       padding: 15px
@@ -86,15 +140,28 @@
       font-weight: 300
       border-bottom: 2px solid transparent
       transition: $transitionAll
+      white-space: nowrap
+      &.swiper-slide 
+        width: auto
 
       &:hover 
         cursor: pointer
         border-bottom: 2px solid $blue
         transition: $transitionAll
+        @include media_768
+          border-bottom: 2px solid $white
 
       &.active
         border-bottom: 2px solid $blueDark
         transition: $transitionAll
+      
+    &-body
+    
+      &-inner
+        display: none
+        &.active
+          display: block
+
 
   &-tabs-body
     margin-top: 30px
