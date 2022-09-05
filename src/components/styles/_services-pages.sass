@@ -3,6 +3,12 @@
   grid-template-columns: repeat(3, 1fr)
   grid-column-gap: 15px
   grid-row-gap: 15px
+
+  @include media_992
+    grid-template-columns: repeat(2, 1fr)
+
+  @include media_670
+    grid-template-columns: repeat(1, 1fr)
   
 .services-link
   display: flex
@@ -29,6 +35,10 @@
 
     img
       width: 100%
+      width: 90px
+
+      @include media_768
+        width: 65px
 
   &__name
     padding-left: 15px
@@ -36,6 +46,10 @@
     font-size: 1rem
     color: $black
     text-transform: uppercase
+
+    @include media_768
+      font-size: .875rem
+
 
   &__arrow
     position: absolute
