@@ -537,6 +537,17 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.section-white-bg {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 40px 50px;
+}
+@media (max-width: 768px) {
+  .section-white-bg {
+    padding: 40px 20px;
+  }
+}
+
 .section-title {
   color: #000;
   font-size: 1.563rem;
@@ -673,6 +684,11 @@ button {
   margin-top: -25px;
   margin-bottom: 30px;
 }
+@media (max-width: 670px) {
+  .breadcrambs {
+    display: none;
+  }
+}
 .breadcrambs__list {
   display: flex;
   align-items: center;
@@ -735,6 +751,9 @@ button {
 }
 .breadcrambs--grey .breadcrambs__link:hover {
   color: #6c757d;
+}
+.breadcrambs--grey span {
+  color: #adb5bd;
 }
 
 .label {

@@ -64,6 +64,14 @@ button
   .grid.grid--2
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
 
+.section-white-bg
+  background-color: $white
+  border-radius: 6px
+  padding: 40px 50px
+
+  @include media_768
+    padding: 40px 20px
+
 .section-title
   color: $black
   font-size: 1.563rem
@@ -193,6 +201,9 @@ button
   margin-top: -25px
   margin-bottom: 30px
 
+  @include media_670
+    display: none
+
   &__list 
     display: flex
     align-items: center
@@ -259,6 +270,10 @@ button
       color: $gray-500
       &:hover
         color: $gray-600
+
+    span 
+      color: $gray-500
+
 
   // FORM ELEMENT
 
